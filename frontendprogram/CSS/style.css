@@ -1,0 +1,16 @@
+nav li{
+    display: block;
+    width: 80px;
+    float: left;
+
+}
+nav a{
+    color: white;
+    background: rgb(0, 183, 255);
+    display: block;
+    line-height: 1.0;
+    padding: 6px 0;
+    border-left: 1px solid white;
+    text-align: center;
+    text-decoration: none;
+}
