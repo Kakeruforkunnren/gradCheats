@@ -1,8 +1,15 @@
+#page{
+    margin: 0 auto;
+    width: 500px;
+}
 nav li{
     display: block;
     width: 80px;
     float: left;
 
+}
+#navigation{
+    background-color: rgb(216, 29, 29);
 }
 nav a{
     color: white;
@@ -13,4 +20,28 @@ nav a{
     border-left: 1px solid white;
     text-align: center;
     text-decoration: none;
+}
+#contents{
+    display: flex;
+}
+main{
+    order: 2;
+    width: 200px;
+    color: #888;
+    background-color: #eee;
+}
+#sub1{
+    order: 1;
+    width: 100px;
+    color: rgb(245, 245, 245);
+    background-color: rgb(20, 228, 30);
+}
+#sub2{
+    order: 3;
+    width: 100px;
+    color: rgb(245, 245, 245);
+    background-color: rgb(236, 255, 70);
+}
+footer,header {
+    background-color: rgb(189, 184, 184);
 }
