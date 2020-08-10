@@ -1,54 +1,406 @@
-#page{
-    width: auto;
-}
-nav li{
-    display: block;
-    width: 90px;
-    float: left;
-    margin-top: -1.7rem;
-}
-#navigation{
-    background-color: rgb(216, 29, 29);
-}
-nav a{
-    color: white;
-    background: rgb(93, 127, 141);
-    display: block;
-    line-height: 1.0;
-    padding: 6px 0;
-    border-left: 1px solid white;
-    text-align: center;
-    text-decoration: none;
-}
-#contents{
+#page {
     display: flex;
     flex-direction: column;
-    margin: 0px auto;
 }
-#maincontents{
-    display: flex;
+
+nav {
+    text-align: center;
 }
-main{
-    order: 2;
-    width: 200px;
-    color: #888;
-    background-color: #eee;
+
+nav ul {
+    margin: 0;
+    padding: 0;
 }
-#sub1{
-    order: 1;
-    width: 100px;
-    color: rgb(245, 245, 245);
-    background-color: rgb(20, 228, 30);
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    width: 15%;
+    min-width: 90px;
+    background-color: rgb(200, 252, 248);
 }
-#sub2{
-    order: 3;
-    width: 100px;
-    color: rgb(245, 245, 245);
-    background-color: rgb(236, 255, 70);
+
+nav li:not(:last-child) {
+    border-right: 2px solid #ddd;
 }
-footer,header {
-    background-color: rgb(189, 184, 184);
+
+nav a {
+    text-decoration: none;
+    color: #333;
 }
-header{
-    margin-bottom: -0.7rem;
+
+main {
+    text-align: center;
+    background-image: url("../master/backgroundomage02.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header,
+footer {
+    background-color: rgb(172, 10, 212);
+}
+
+header {
+    height: 75px;
+}
+
+footer {
+    height: 200px;
+}
+
+img {
+    /*4行*/
+    /*width: 20%;*/
+    /*5行*/
+    width: 18%;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    width: 18%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    opacity: 0.6;
+}
+input[type="checkbox"]:checked{
+    display: inline-block;
+    width: 18%;
+    height: 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+}
+.checkimg{
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Leader〇{
+    background: url("../newMaster/Leader〇.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Leader◎{
+    background: url("../newMaster/Leader◎.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Vocal〇{
+    background: url("../newMaster/Vocal〇.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Vocal◎{
+    background: url("../newMaster/Vocal◎.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Dance〇{
+    background: url("../newMaster/Dance〇.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Dance◎{
+    background: url("../newMaster/Dance◎.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Visual〇{
+    background: url("../newMaster/Visual〇.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Visual◎{
+    background: url("../newMaster/Visual◎.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Center〇{
+    background: url("../newMaster/Center〇.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Center◎{
+    background: url("../newMaster/Center◎.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#All〇{
+    background: url("../newMaster/All〇.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#All◎{
+    background: url("../newMaster/All◎.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#slowStarter{
+    background: url("../newMaster/slowStarter.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#startDash{
+    background: url("../newMaster/startDash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#popularPerson{
+    background: url("../newMaster/popularPerson.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#quietPerson{
+    background: url("../newMaster/quietPerson.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Melancholy1{
+    background: url("../newMaster/Melancholy1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Melancholy2{
+    background: url("../newMaster/Melancholy2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Relax1{
+    background: url("../newMaster/Relax1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Relax2{
+    background: url("../newMaster/Relax2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Attention{
+    background: url("../newMaster/Attention.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Conservative{
+    background: url("../newMaster/Conservative.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#vocalUpperp{
+    background: url("../newMaster/vocalUpper+.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#vocalUpperpp{
+    background: url("../newMaster/vocalUpper++.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#vocalUpperppp{
+    background: url("../newMaster/vocalUpper+++.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#danceUpperp{
+    background: url("../newMaster/danceUpper+.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#danceUpperpp{
+    background: url("../newMaster/danceUpper++.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#danceUpperppp{
+    background: url("../newMaster/danceUpper+++.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#visualUpperp{
+    background: url("../newMaster/visualUpper+.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#visualUpperpp{
+    background: url("../newMaster/visualUpper++.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#visualUpperppp{
+    background: url("../newMaster/visualUpper+++.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#mentalUpperp{
+    background: url("../newMaster/mentalUpper+.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#mentalUpperpp{
+    background: url("../newMaster/mentalUpper++.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#mentalUpperppp{
+    background: url("../newMaster/mentalUpper+++.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#vocalMaster{
+    background: url("../newMaster/vocalMaster.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#danceMaster{
+    background: url("../newMaster/danceMaster.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#visualMaster{
+    background: url("../newMaster/visualMaster.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Perfectly{
+    background: url("../newMaster/Perfectly.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#mentalRecoveryp{
+    background: url("../newMaster/mentalRecovery+.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#mentalRecoverym{
+    background: url("../newMaster/mentalRecovery-.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#appealupHeight{
+    background: url("../newMaster/appealupHeight.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#appealupRow{
+    background: url("../newMaster/appealupRow.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#SakuragiMano{
+    background: url("../newMaster/SakuragiMano.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#KazanoHiori{
+    background: url("../newMaster/KazanoHiori.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#HatimiyaMeguru{
+    background: url("../newMaster/HachimiyaMeguru.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#TukiokaKogane{
+    background: url("../newMaster/TukiokaKogane.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#TanakaMamimi{
+    background: url("../newMaster/TanakaMamimi.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#SirseSakuya{
+    background: url("../newMaster/ShiraseSakuya.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#MitumineYuika{
+    background: url("../newMaster/MitumineYuika.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#YuukokuKiriko{
+    background: url("../newMaster/YuukokuKiriko.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#KomiyaKaho{
+    background: url("../newMaster/KomiyaKaho.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#SonodaTiyoko{
+    background: url("../newMaster/Sonodatiyoko.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#SaijyouJyuri{
+    background: url("../newMaster/SaijyouJyuri.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#OrinoRinze{
+    background: url("../newMaster/OrinoRinze.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#ArosugawaNatuha{
+    background: url("../newMaster/ArisugawaNatuha.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#OosakiAmana{
+    background: url("../newMaster/OosakiAmana.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#OosakiTenka{
+    background: url("../newMaster/OosakiTenka.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#KuwayamaTiyuki{
+    background: url("../newMaster/KuwayamaTiyuki.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#SerizawaAsahi{
+    background: url("../newMaster/SerizawaAsahi.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#MayuzumiHuyuko{
+    background: url("../newMaster/MayuzumiHuyuko.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#IzumiMei{
+    background: url("../newMaster/IzumiMei.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#AsakuraToru{
+    background: url("../newMaster/AsakuraToru.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#HigutiMadoka{
+    background: url("../newMaster/HigutiMadoka.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#HukumaruKoito{
+    background: url("../newMaster/HukumaruKoito.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#ItikawaHinana{
+    background: url("../newMaster/ItikawaHinana.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
